@@ -1,0 +1,6 @@
+@CentralWeb_HostAddress = http://localhost:5219
+
+GET {{CentralWeb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
