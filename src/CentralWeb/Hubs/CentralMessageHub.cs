@@ -15,7 +15,7 @@ namespace CentralWebInHospital.Hubs
             await Clients.All.SendAsync("Send", message);
         }
 
-        public void RegisterUserWithDesiredCentral(int centralId) => 
+        public void RegisterUserWithDesiredCentral(int centralId) =>
             this._onlineUsersCentrals.Add(new KeyValuePair<int, int>(int.Parse(this.Context.User?.Identity.GetUserId()!), centralId));
 
         public void GetRegisteredUsersCentrals()
