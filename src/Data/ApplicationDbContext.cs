@@ -17,6 +17,12 @@ namespace Data
 
         }
 
+        public ApplicationDbContext()
+           : base()
+        {
+
+        }
+
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

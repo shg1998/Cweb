@@ -21,8 +21,7 @@ namespace Data.Repositories
         }
 
         #region Async Method
-        public virtual async Task<TEntity> GetByIdAsync(CancellationToken cancellationToken, params object[] ids) =>
-            await Entities.FindAsync(ids, cancellationToken);
+        public virtual async Task<TEntity> GetByIdAsync(CancellationToken cancellationToken, params object[] ids) => await Entities.FindAsync(ids, cancellationToken);
 
         public virtual async Task AddAsync(TEntity entity, CancellationToken cancellationToken, bool saveNow = true)
         {
@@ -43,6 +42,7 @@ namespace Data.Repositories
         public virtual async Task UpdateAsync(TEntity entity, CancellationToken cancellationToken, bool saveNow = true)
         {
             Assert.NotNull(entity, nameof(entity));
+            //Entities.Attach(entity);
             Entities.Update(entity);
             if (saveNow)
                 await DbContext.SaveChangesAsync(cancellationToken);
@@ -99,7 +99,8 @@ namespace Data.Repositories
         {
             Assert.NotNull(entity, nameof(entity));
             Entities.Update(entity);
-            DbContext.SaveChanges();
+            if (saveNow)
+                DbContext.SaveChanges();
         }
 
         public virtual void UpdateRange(IEnumerable<TEntity> entities, bool saveNow = true)

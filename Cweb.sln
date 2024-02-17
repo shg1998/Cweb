@@ -7,21 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FE39E4FE-6F0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0D104B47-7B75-471E-BE11-7EE397AADEAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralWeb", "src\CentralWeb\CentralWeb.csproj", "{0A6FFCC6-BEE8-4664-BA4B-603698ECCA54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CentralWeb", "src\CentralWeb\CentralWeb.csproj", "{0A6FFCC6-BEE8-4664-BA4B-603698ECCA54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "src\Common\Common.csproj", "{F06B94B9-04E1-4FBD-ACEE-19C36987B0B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "src\Common\Common.csproj", "{F06B94B9-04E1-4FBD-ACEE-19C36987B0B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "src\Data\Data.csproj", "{14DF9B1D-3DDF-4599-8049-1B9CB3A8C4ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "src\Data\Data.csproj", "{14DF9B1D-3DDF-4599-8049-1B9CB3A8C4ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "src\Entities\Entities.csproj", "{8CC877D5-F95C-4D42-87AE-D4BDA7A6D4D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "src\Entities\Entities.csproj", "{8CC877D5-F95C-4D42-87AE-D4BDA7A6D4D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "src\Services\Services.csproj", "{634475E4-42D2-4A75-A3BF-111D85656088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "src\Services\Services.csproj", "{634475E4-42D2-4A75-A3BF-111D85656088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFrameworks", "src\WebFrameworks\WebFrameworks.csproj", "{C5E053B8-2591-4B03-AF7A-8B2EE75DF937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFrameworks", "src\WebFrameworks\WebFrameworks.csproj", "{C5E053B8-2591-4B03-AF7A-8B2EE75DF937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Test", "test\Common.Test\Common.Test.csproj", "{16A8D47C-5B97-4D24-BCF0-7D31A9A75E36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Test", "test\Common.Test\Common.Test.csproj", "{16A8D47C-5B97-4D24-BCF0-7D31A9A75E36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities.Test", "test\Entities.Test\Entities.Test.csproj", "{7DB14188-F40F-4653-BE95-64127633C882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities.Test", "test\Entities.Test\Entities.Test.csproj", "{7DB14188-F40F-4653-BE95-64127633C882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Test", "test\Data.Test\Data.Test\Data.Test.csproj", "{7B4A4A45-43F5-473D-ADED-2E8DA5351243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{7DB14188-F40F-4653-BE95-64127633C882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB14188-F40F-4653-BE95-64127633C882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB14188-F40F-4653-BE95-64127633C882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4A4A45-43F5-473D-ADED-2E8DA5351243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4A4A45-43F5-473D-ADED-2E8DA5351243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4A4A45-43F5-473D-ADED-2E8DA5351243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4A4A45-43F5-473D-ADED-2E8DA5351243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{C5E053B8-2591-4B03-AF7A-8B2EE75DF937} = {FE39E4FE-6F04-4BF5-8AE2-E25CFE9B2C8D}
 		{16A8D47C-5B97-4D24-BCF0-7D31A9A75E36} = {0D104B47-7B75-471E-BE11-7EE397AADEAE}
 		{7DB14188-F40F-4653-BE95-64127633C882} = {0D104B47-7B75-471E-BE11-7EE397AADEAE}
+		{7B4A4A45-43F5-473D-ADED-2E8DA5351243} = {0D104B47-7B75-471E-BE11-7EE397AADEAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34BCFB88-79DA-4A05-BB55-F4380AA7A47E}
